@@ -1,0 +1,101 @@
+sentence = "There is a very powerful language called Python"
+
+# 1. Print that sentence all in upper case.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: THERE IS A VERY POWERFUL LANGUAGE CALLED PYTHON
+
+print(sentence.upper())
+
+
+# 2. Print the first letter of that sentence concatenated with the second and the last letter.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: Thn
+
+print(sentence[0] + sentence[1] + sentence[-1])
+
+
+# 3. Turn the last letter of the sentence to upper case.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: There is a very powerful language called PythoN
+print(sentence.replace("n", "N", 46))
+
+# 4. Extract and display only the word "very".
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: very
+print(sentence[11:15])
+
+# 5. Extract and display only the word "Python" and make sure it displays all in upper case.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: PYTHON
+print(sentence[-6:].upper())
+
+# 6. Display everything from the 4th character to the 45th character in the sentence.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: re is a very powerful language called Pyth
+print(sentence[3:45])
+
+# 7. If a string has 19 characters in it, what is the index of the last character? What's your answer?
+# 18
+
+# 8. Print the first 20 characters of the sentence in UPPER CASE and the remaining characters in lower case.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: THERE IS A VERY POWErful language called python
+sen1 = (sentence[0:20].upper())
+sen2 = (sentence[20:47])
+print(sen1 + sen2)
+
+# 9. Replace every letter 'a' in the sentence with '*'.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: There is * very powerful l*ngu*ge c*lled Python
+print(sentence.replace('a', 'x'))
+
+# 10. Replace the word "powerful" with "*".
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: There is a very ***** language called Python
+print(sentence.replace("powerful", "x"))
+
+
+# 11. Display the sentence like this: "There Is A Very Powerful Language Called Python"
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: There Is A Very Powerful Language Called Python
+print(sentence.title())
+
+# 12. Turn the sentence into a list of words.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: ['There', 'is', 'a', 'very', 'powerful', 'language', 'called', 'Python']
+print(sentence.split())
+
+# 13. Turn the sentence into a list of UPPER CASE and also TITLED words.
+# Example Input: sentence = "There is a very powerful language called Python"
+# Expected Output: ['THERE', 'IS', 'A', 'VERY', 'POWERFUL', 'LANGUAGE', 'CALLED', 'PYTHON']
+# Expected Output: ['There', 'Is', 'A', 'Very', 'Powerful', 'Language', 'Called', 'Python']
+words = sentence.upper()
+upper_words = words.split()
+print(upper_words)
+
+# 14. Have a variable remark = "The luck that guy has really sucks!!". Replace "luck" with "l*" and "sucks" with "s***s".
+# Example Input: remark = "The luck that guy has really sucks!!"
+# Expected Output: The l*** that guy has really s***s!!
+words = "The luck that guy has really sucks!!"
+print(words.replace("luck", "l***").replace("sucks", "s***s"))
+
+
+# 15. Have variables fm, years = 106.5, 26. Then use concatenation to print "Faaji FM with frequency 106.5 is 26 years old today"
+# Example Input: fm = 106.5, years = 26
+# Expected Output: Faaji FM with frequency 106.5 is 26 years old today.
+freq = 106.5
+years = 26
+print(f"Faaji FM with frequency {freq} is {years} years old today")
+
+# 16. Create variables num1, num2 = 70, 80. Then print 70 * 80 = 5600 using CONCATENATION. And on the next line use INTERPOLATION to do it.
+# Example Input: num1 = 70, num2 = 80
+# Expected Output using Interpolation: 70 * 80 = 5600
+# Expected Output using Concatenation: 70 * 80 = 5600
+
+num1, num2 = 70, 80
+result = num1 * num2
+# Using concatenation
+print(str(num1) + " * " + str(num2) + " = " + str(result))
+
+# interpolation
+print(f"{num1} * {num2} = {result}")

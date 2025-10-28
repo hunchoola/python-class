@@ -1,0 +1,6 @@
+user_input = input("Say something python: ")
+word_split = user_input.lower().split()
+word_split_count = len(word_split)
+unique_word = set(word_split)
+count_unique = len(word_split)
+print(count_unique)
