@@ -14,6 +14,8 @@ try:
     print(f"\nDefinition of '{word}':")
     print(definition)
 
+    
+
 
 except Exception:
     print("An error occurred:")
